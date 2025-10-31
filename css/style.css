@@ -46,3 +46,9 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.header__link {
+    &:hover {
+        text-decoration: underline;
+    }
+}
