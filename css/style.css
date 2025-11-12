@@ -3,6 +3,7 @@
     padding: 0;
     font-size: 15px;
     font-family: "Inter", sans-serif;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -21,11 +22,15 @@ a {
 }
 
 .header__container {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
     padding: 4px 24px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.12);
 }
 
 .header__list {
@@ -38,11 +43,21 @@ a {
     margin-left: auto;
 }
 
+.annbar__container {
+    background-color: #EAEAE6;
+    text-align: center;
+    padding: 6px 0;
+}
+
+.annbar__text > a {
+    text-decoration: underline;
+}
+
 .hero__container {
     width: 100%;
     height: 100vh;
     background-color: rgb(209, 209, 209);
-    background-image: url("https://www.maisonmargiela.com/dw/image/v2/AAPK_PRD/on/demandware.static/-/Library-Sites-margiela-shared/default/dw26e109ab/MM/102325Update_Tabi_Embroidery/MM_EDITORIAL_REFRESH_251030_HERO_BANNER_01_DESKTOP.jpg?sw=3000");
+    background-image: url("https://www.theavenuesinsider.com/storage/app/public/post/w6PVgtcu7ZQPvQpwWz54g7L2jkUnp8ekPchEP98C.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -51,4 +66,27 @@ a {
     &:hover {
         text-decoration: underline;
     }
+}
+
+section {
+    margin: 64px 0;
+}
+
+.description__p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Cormorant Garamond", serif;
+    margin: 0 18%;
+    text-align: center;
+}
+
+.doscolumnesimg__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.doscolumnesimg__container > img {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
