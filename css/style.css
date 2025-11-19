@@ -82,12 +82,25 @@ section {
 .doscolumnesimg__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: relative;
 }
 
 .doscolumnesimg__container > img {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.doscolumnesimg__text {
+    position: absolute;
+    bottom: 20px;         
+    left: 50%;          
+    transform: translateX(-50%); 
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    z-index: 10;
 }
 
 /* HOME */
