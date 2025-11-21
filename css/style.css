@@ -130,12 +130,14 @@ section {
 .trescolumnesimg__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    height: 90vh;
+    align-items: center;
 }
 
 .trescolumnesimg__container > img {
     display: block;
     width: 100%;
-    height: 100%;
 }
 
 .PantalonDeportivo {
