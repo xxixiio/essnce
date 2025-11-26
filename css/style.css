@@ -215,7 +215,7 @@ font-size: 20px;
 }
 /* Termina HOME */
 
-h2 {
+.pagetitle {
     text-align: center;
     font-size: 32px;
     font-weight: 600;
