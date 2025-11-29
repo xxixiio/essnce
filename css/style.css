@@ -4,6 +4,7 @@
     font-size: 15px;
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 h1 {
@@ -106,6 +107,7 @@ section {
 .description__p {
     font-size: 16px;
     font-weight: 700;
+    font-family: "Cormorant Garamond", serif;
     margin: 0 18%;
     text-align: center;
 }
@@ -221,6 +223,8 @@ font-size: 20px;
     font-size: 32px;
     font-weight: 600;
     margin-top: 24px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
 }
 
 .allproducts__container {
