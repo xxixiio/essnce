@@ -238,9 +238,8 @@ font-size: 20px;
 .productcard__container {
     width: 17rem;
     height: 350px;
-    /* outline: purple 1px dashed; */
     text-align: center;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .productcard__img {
