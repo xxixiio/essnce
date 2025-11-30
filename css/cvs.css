@@ -1,4 +1,4 @@
-/* Centrar todo el contenido principal */
+
 main {
   max-width: 900px;
   margin: 0 auto;
@@ -7,7 +7,7 @@ main {
   line-height: 1.6;
 }
 
-/* Secciones del currículum */
+
 .curriculum__container h2 {
   text-align: center;
   margin-top: 2rem;
@@ -23,7 +23,7 @@ main {
   color: #555;
 }
 
-/* Estilos para las tablas */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -44,19 +44,19 @@ th, td {
   text-align: center;
 }
 
-/* Solo la fila de cabecera en gris oscuro */
+
 thead th {
   background-color: #d9d9d9;
   font-weight: bold;
 }
 
-/* Primera columna más clara */
+
 th:first-child,
 td:first-child {
   background-color: #f2f2f2;
 }
 
-/* Alternar colores en filas (opcional, excluyendo la cabecera) */
+
 tbody tr:nth-child(even) td {
   background-color: #fafafa;
 }
