@@ -19,14 +19,19 @@
   </head>
   <body>
     <div class="annbar__container">
-      <p class="annbar__text">Descubreix les nostres <a href="coleccions.html">novas col·leccions</a>. Enviament gratuït a la primera compra</p>
+      <p class="annbar__text">
+        Descubreix les nostres <a href="coleccions.html">novas col·leccions</a>.
+        Enviament gratuït a la primera compra
+      </p>
     </div>
     <header class="header__container">
       <nav>
         <ul class="header__list">
           <li><a clas href="botiga/dona.html" class="header__link">Dona</a></li>
           <li><a href="botiga/home.html" class="header__link">Home</a></li>
-          <li><a href="botiga/accesoris.html" class="header__link">Accesoris</a></li>
+          <li>
+            <a href="botiga/accesoris.html" class="header__link">Accesoris</a>
+          </li>
           <li><a href="coleccions.html" class="header__link">Coleccions</a></li>
         </ul>
       </nav>
@@ -34,87 +39,107 @@
         <h1>ESSNCE</h1>
       </a>
       <ul class="header__list header__list--right">
-        <li><a clas href="nosaltres.html" class="header__link">Sobre nosaltres</a></li>
+        <li>
+          <a clas href="nosaltres.html" class="header__link">Sobre nosaltres</a>
+        </li>
         <li><a clas href="" class="header__link">Buscar</a></li>
         <li><a clas href="" class="header__link">Compte</a></li>
         <li><a clas href="" class="header__link">Cistella</a></li>
       </ul>
     </header>
-    
-    <main class="formwrapper">
 
-  <div class="formcard">
-    <h2 class="formtitle">Accedeix al teu compte</h2>
+    <main class="form">
+      <div class="form__card">
+        <h2 class="form__title">ACCEDEIX AL TEU COMPTE</h2>
 
-    <form action="enviat.html" method="get" class="formcontent">
+        <form action="enviat.html" method="get" class="form__content">
+          <label for="fuser" class="form__label">Nom d'usuari *</label>
+          <input
+            type="text"
+            id="fuser"
+            name="usuari"
+            class="form__input"
+            required
+          />
 
+          <label for="fmail" class="form__label">Correu electrònic *</label>
+          <input
+            type="email"
+            id="fmail"
+            name="email"
+            class="form__input"
+            required
+          />
 
-      <label for="fuser" class="formlabel">Nom d’usuari *</label>
-      <input type="text" id="fuser" name="usuari" class="forminput" required>
+          <label for="fnum" class="form__label">Edat *</label>
+          <input
+            type="number"
+            id="fnum"
+            name="edat"
+            class="form__input"
+            min="1"
+            max="120"
+            required
+          />
 
+          <label for="fcountry" class="form__label">País *</label>
+          <select id="fcountry" name="pais" class="form__input" required>
+            <option value="">Selecciona...</option>
+            <option value="espanya">Espanya</option>
+            <option value="franca">França</option>
+            <option value="italia">Itàlia</option>
+          </select>
 
-      <label for="fmail" class="formlabel">Correu electrònic *</label>
-      <input type="email" id="fmail" name="email" class="forminput" required>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Productes del teu interès</legend>
 
+            <label class="form__check">
+              <input type="checkbox" name="interes" value="dona" checked /> Roba
+              Dona
+            </label>
 
-      <label for="fnum" class="formlabel">Edat *</label>
-      <input type="number" id="fnum" name="edat" class="forminput" min="1" max="120" required>
+            <label class="form__check">
+              <input type="checkbox" name="interes" value="home" /> Roba Home
+            </label>
 
+            <label class="form__check">
+              <input type="checkbox" name="interes" value="accesoris" />
+              Accessoris
+            </label>
+          </fieldset>
 
-      <label for="fcountry" class="formlabel">País *</label>
-      <select id="fcountry" name="pais" class="forminput" required>
-        <option value="">Selecciona...</option>
-        <option value="espanya">Espanya</option>
-        <option value="franca">França</option>
-        <option value="italia">Itàlia</option>
-      </select>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">
+              Com prefereixes rebre novetats?
+            </legend>
 
+            <label class="form__check">
+              <input type="radio" name="novetats" value="correu" checked />
+              Correu electrònic
+            </label>
 
-      <fieldset class="formfieldset">
-        <legend class="formlegend">Productes del teu interès</legend>
+            <label class="form__check">
+              <input type="radio" name="novetats" value="sms" /> SMS
+            </label>
 
-        <label class="formcheck">
-          <input type="checkbox" name="interes" value="dona" checked> Roba Dona
-        </label>
+            <label class="form__check">
+              <input type="radio" name="novetats" value="push" /> Notificacions
+              mòbil
+            </label>
+          </fieldset>
 
-        <label class="formcheck">
-          <input type="checkbox" name="interes" value="home"> Roba Home
-        </label>
+          <label for="ftext" class="form__label">Comentaris</label>
+          <textarea
+            id="ftext"
+            name="comentaris"
+            class="form__input form__textarea"
+            placeholder="Escriu aquí qualsevol observació o preferència..."
+          ></textarea>
 
-        <label class="formcheck">
-          <input type="checkbox" name="interes" value="accesoris"> Accessoris
-        </label>
-      </fieldset>
-
-
-      <fieldset class="formfieldset">
-        <legend class="formlegend">Com prefereixes rebre novetats?</legend>
-
-        <label class="formcheck">
-          <input type="radio" name="novetats" value="correu" checked> Correu electrònic
-        </label>
-
-        <label class="formcheck">
-          <input type="radio" name="novetats" value="sms"> SMS
-        </label>
-
-        <label class="formcheck">
-          <input type="radio" name="novetats" value="push"> Notificacions mòbil
-        </label>
-      </fieldset>
-
-
-      <label for="ftext" class="formlabel">Comentaris</label>
-      <textarea id="ftext" name="comentaris" class="forminput formtextarea"
-        placeholder="Escriu aquí qualsevol observació o preferència..."></textarea>
-
-
-      <button type="submit" class="formbtn">Enviar</button>
-
-    </form>
-  </div>
-
-</main>
+          <button type="submit" class="form__btn">Enviar</button>
+        </form>
+      </div>
+    </main>
 
     <footer>
       <div>
