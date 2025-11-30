@@ -33,3 +33,7 @@ section ~ p {
 .equip__link {
     text-decoration: underline;
 }
+
+article p {
+    text-align: justify;
+}
